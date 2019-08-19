@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+
+float numero_1,numero_2,resultado;
+string operacao;
+
+float soma (){
+    resultado=numero_1+numero_2;
+    cout<<"A soma é "<<resultado;
+    return resultado;
+}
+
+float subtracao(){
+  resultado=numero_1-numero_2;
+  cout<<"A subtração é "<<resultado;
+  return resultado;
+}
+
+float multiplicacao(){
+  resultado=numero_1*numero_2;
+  cout<<"A multiplicação é "<<resultado;
+  return resultado;
+}
+
+float divisao (){
+  resultado=numero_1/numero_2;
+  cout<<"A divisão é "<<resultado;
+  return resultado;
+}
+
+
+int main() {
+
+
+cout<<"Digite um número " ;
+cin>>numero_1;
+
+cout<<"Digite um número " ;
+cin>>numero_2;
+
+
+
+cout<<"Escolha uma operação  * , / , + , - "<<endl;
+
+cin>>operacao;
+
+if (operacao == "+"){
+  soma();
+}
+
+if (operacao == "-"){
+  subtracao();
+}
+
+if (operacao == "*"){
+  multiplicacao();
+}
+
+if (operacao == "/"){
+
+
+}
+
+
+return 0;
+}
